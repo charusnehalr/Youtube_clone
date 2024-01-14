@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>position practice</title>
+  </head>
+  <body style="
+  height: 3000px;
+  padding-top: 60px;
+  padding-left:80px;">
+  <!-- to add space at the top don't add margin top in element, 
+  change in body by margin/padding(better)  -->
+    <div style="
+      background-color: black;
+      color:white;
+      position: fixed;
+      top:0px;
+      bottom:100px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      z-index: 100;
+      ">
+      <!-- codes written below appears below it the above elements 
+      use z-index to override it
+      this will control which element appears infront and which behind -->
+    header</div>
+     <!-- top:0px; how far the element is from top of the window 
+      left: 50px how much space between element and left edge of the window 
+      when right and left are 50px , then element stretches to meet conditions 
+      top left right bottom : used when we want to resize the element with page 
+      If not then use height-->
+    
+    <div style="
+    background-color: green;
+    color:white;
+    position:fixed;
+    left: 0;
+    bottom:0;
+    top: 50px;
+    width:72px;">
+      sidebar
+      <div style="
+    position:absolute;
+    background-color: red;
+    color: white;
+    top:0px;
+    right:0px;">
+      x
+      <!-- absolute within fixed -->
+    </div>
+    </div> 
+     <!--when position absolute inside fixed , then its 
+    relative to the fixed element -->
+  
+    <!-- fixed : placed in the browser window
+         absolute : placed on the page  -->
+    <div style="
+    position:absolute;
+    background-color: red;
+    color: white;
+    top:60px;
+    right:10px;">
+      absolute
+    </div>
+
+
+    <div style="
+    background-color: rgb(0, 179, 255);
+    height:200px;
+    width:200px;
+    position:static;
+    ">div1</div>
+    <div style="
+    background-color: lightcoral;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    ">div2
+    <div style="
+    position:absolute;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    bottom:10px;
+    right: 10px;">
+      5min
+      <!-- this element is relative to div2(element) not page -->
+    </div>
+</div>
+  </body>
+</html>

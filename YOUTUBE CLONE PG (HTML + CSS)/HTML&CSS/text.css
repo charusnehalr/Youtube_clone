@@ -1,0 +1,51 @@
+.p{
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.title{
+  
+  font-size: 18px;
+  font-weight: bold;
+  width: 280px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.stats{
+  
+  font-size: 12px;
+  color: rgba(49, 48, 48, 0.788);
+  margin-bottom: 14px;
+}
+.name{
+  
+  font-size: 15px;
+  color:black;
+  margin-bottom: 14 px;
+
+}
+.content{
+  
+  font-size:13px;
+  color: black;
+  width: 280px;
+  line-height: 22px;
+  margin-bottom: 100px;
+}
+
+.apple{
+  margin-bottom: 50px;
+  font-size:14px;
+  background-color:rgb(227,65,64) ;
+  color: white;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+.shop{
+  cursor: pointer;
+  margin-left: 12px;
+}
+.shop:hover{
+  text-decoration: underline;
+
+}

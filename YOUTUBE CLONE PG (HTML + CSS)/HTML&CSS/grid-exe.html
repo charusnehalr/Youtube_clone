@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Grid exe</title>
+    <style>
+      .pa{
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+      .pb{
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+      .pc{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="pa">
+      <div style="background-color:aquamarine">200px</div>
+      <div style="background-color:rgb(255, 217, 127)">75px</div>
+    </div>
+    <br>
+    <div class="pb">
+      <div style="background-color:rgb(255, 127, 127)">50px</div>
+      <div style="background-color:rgb(249, 127, 255)">space</div>
+      <div style="background-color:rgb(255, 185, 127)">75px</div>
+    </div>
+    <br>
+    <div class="pc">
+      <div style="background-color:rgb(255, 127, 127)">B1</div>
+      <div style="background-color:rgb(249, 127, 255)">B2</div>
+      <div style="background-color:rgb(127, 148, 255)">B3</div>
+      <div style="background-color:rgb(255, 127, 182)">B4</div>
+      <div style="background-color:rgb(127, 255, 138)">B5</div>
+      <div style="background-color:rgb(255, 200, 127)">B6</div>
+      <div style="background-color:rgb(255, 127, 255)">B7</div>
+      <div style="background-color:rgb(219, 255, 127)">B8</div>
+      </div>
+  </body>
+</html>

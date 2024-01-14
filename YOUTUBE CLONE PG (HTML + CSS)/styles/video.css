@@ -1,0 +1,93 @@
+
+      .thumbnail
+      {
+        display: block;
+      }
+      
+      .thumbnail{
+        width:100%;
+        /* width:300px; 
+        100 percent takes up the given container */
+     
+      }
+      .thumbnail-row{
+        margin-bottom: 8px;
+        position: relative;
+      }
+      .video-title{
+        margin-top:0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        margin-bottom: 10px;
+      }
+      .video-author,
+      .video-stats{
+        font-size: 12px;
+        color:rgb(91, 91, 91);
+      }
+      .video-author{
+        margin-bottom: 4px;
+      }
+   
+      /*.video-preview{
+          width:300px;
+        display: inline-block;
+        vertical-align:top;
+        margin-right: 15px;
+        we can get rid of all due to grip property
+       }*/
+      
+      .video-info-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+      .channel-pic{
+        vertical-align: top ;
+      }
+      .profile-pic{
+        width:36px;
+        border-radius: 50px;
+      }
+      .video-grid{
+        display: grid;
+        grid-template-columns: 1fr  1fr  1fr  ;
+        column-gap: 16px ;
+        row-gap:40px ;
+
+       /* text-decoration: underline; 
+           this applies to all the elements below video-grid 
+          this is inheritance 
+          this applies to text properties (mostly) not all props   */
+      }
+      /* to make website responsive -> media query 
+      this css will only activate when screen size <750 px*/
+      @media (max-width:750px){
+        .video-grid{
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 751px) and (max-width: 999px) {
+        .video-grid{
+          grid-template-columns: 1fr 1fr 1fr ;
+        }
+      }
+      @media (min-width: 1000px){
+        .video-grid{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+      .video-time{
+        
+        font-size: 12px;
+        font-weight:500;
+        padding: 4px;
+        border-radius: 2px;
+        background-color: black;
+        color:white;
+        position: absolute;
+        bottom: 8px;
+        right:5px;
+      }
+     
+    

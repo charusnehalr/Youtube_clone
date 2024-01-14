@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Grid</title>
+    <style>
+      .dogpic{
+        width: 200px;
+        height: 200px;
+        object-fit:cover;
+      }
+      .name{
+        margin-top: 3px;
+        margin-bottom: 0;
+        font-size:large;
+        font-weight: bold;
+        margin-left: 8px;
+        margin-bottom: 15px;
+      }
+      .profile-pic{
+        width:30px;
+        height:30px;
+        border-radius: 50px;
+        margin-left: 8px;
+      }
+      .mutual{
+        margin-left: 10px;
+        font-size:small;
+        color: gray;
+        vertical-align: middle;
+      }
+      .mutual-row{
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .frnd-btn{
+        margin-left: 5px;
+        margin-bottom: 8px;
+        background-color: rgb(35, 121, 219);
+        padding:9px 17px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+      }
+      .profile-box{
+        width:200px;
+        margin-left: 20px;
+        box-shadow: 0px 0px 8px rgba(0,0,0,.25);
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
+
+    </style>
+  </head>
+  <body style="padding-bottom: 1000px;">
+
+   <div style="
+      display:grid;
+      grid-template-columns: 100px 100px ;
+    ">
+
+    <div style="background-color:aquamarine">div1</div>
+    <div style="background-color: violet">div2
+    <p>para</p></div>
+   </div> 
+
+   <div style="
+      margin-top: 30px;
+      display:grid;
+      grid-template-columns: 100px 100px 200px ;
+    ">
+    <div style="background-color:aquamarine">div1</div>
+    <div style="background-color: violet">div2
+    <p>para</p>
+    </div>
+    <div style="background-color:aquamarine">div3</div>
+    <div style="background-color: violet">div2
+      <p>para</p>
+      </div>
+    </div> 
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    ">
+    <div style="background-color: turquoise;">100px</div>
+    <div style="background-color:thistle">1fr</div>
+    </div>
+    
+<!-- how to create a grid  -->
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 30px;">
+
+      <div style="background-color:aquamarine;
+          height:100px">100px</div>
+      <div style="background-color: blueviolet;
+          height:100px">100px</div>
+      <div style="background-color:chocolate;
+          height:100px">100px</div>
+      <div style="background-color: aqua;
+      height:100px">100px</div>
+  <div style="background-color:bisque;
+      height:100px">100px</div>
+  <div style="background-color:violet;
+      height:100px">100px</div>
+
+    </div>
+    <!-- dog profiles -->
+    
+   <div class="grid">
+    <div class="profile-box">
+      <img class="dogpic" src="thumbnail/ndog.jpeg">
+      <p class="name">
+        Lindt
+      </p>
+      <div class="mutual-row">
+        <img class="profile-pic" src="thumbnail/sorted.jpg">
+        <p class="mutual">
+          4 mutual friends
+        </p>
+      </div>
+      <button class="frnd-btn">
+        Add Friend
+      </button>
+    </div>
+
+  
+    <div class="profile-box">
+      <img class="dogpic" src="thumbnail/dog2.jpeg">
+      <p class="name">Summer</p>
+      <div class="mutual-row">
+        <img class="profile-pic" src="thumbnail/sorted.jpg">
+        <p class="mutual">8 mutual friends</p>
+      </div>
+      <button class="frnd-btn">Add Friend</button>
+    </div>
+
+
+    <div class="profile-box">
+      <img class="dogpic" src="thumbnail/squ.jfif">
+      <p class="name">Spide Flin</p>
+      <div class="mutual-row">
+        <img class="profile-pic" src="thumbnail/sorted.jpg">
+        <p class="mutual">4 mutual friends</p>
+      </div>
+      <button class="frnd-btn">Add Friend</button>
+    </div>
+  </div>
+
+  </body>
+</html>

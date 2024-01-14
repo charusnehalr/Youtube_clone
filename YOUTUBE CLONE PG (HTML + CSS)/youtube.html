@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>youtube.com</title>
+
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+  </head>
+
+  <body>
+    <!-- semantic elements : header,nav,main,section : they hv a special meaning to screen readers search engines etc -->
+    
+    <!-- search box header -->
+    
+    <!-- 
+      block : para, div
+      inline: images 
+      inline block: strong, span
+     -->
+
+     <!-- Left section -->
+    <header class="header">
+      <div class = "left-section">
+        <img class="hamburger-menu" src="thumbnail/hamburger-menu.svg">
+        <img class="youtube-logo" src="thumbnail/youtube-logo.svg">
+
+    <!-- middle section -->
+      </div>
+      <div class = "middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="thumbnail/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class= "voice-search-icon" src="thumbnail/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+ 
+      <!-- right section -->
+      <div class = "right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="thumbnail/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+       
+        <img class="youtube-apps-icon" src="thumbnail/youtube-apps.svg">
+        <div class="notification-icon-container">
+          <img class="notification-icon"
+          src="thumbnail/notifications.svg">
+          <div class="notification-count">3</div>
+        </div>
+        <img class="current-user-picture" src="thumbnail/sorted.jpg">
+      </div>
+    </header>
+      <!-- when x element written below y , y appears front
+        position static : default appear back, 
+        when position relative rule of which was written first starts to apply -->
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="thumbnail/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="thumbnail/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="thumbnail/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="thumbnail/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="thumbnail/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="thumbnail/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+        <section class="video-grid">
+          <div class="video-preview">
+            <div class="thumbnail-row"> 
+              <!-- thumbnail row : relative element & video time :absolute element -->
+              <img  class="thumbnail" src="thumbnail/google-sundar.webp">
+              <!-- thumbnail  -> img -> container ->can't put inside , so use thumb-row -->
+              <div class="video-time">14.20</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-pic">
+                <img class="profile-pic" src="thumbnail/marques.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="video-author">
+                  Marques Brownlee
+                </p>
+                <p class="video-stats">
+                  3.4M views &#183; 6 months ago 
+                </p>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img  class="thumbnail" src="thumbnail/sorted.webp">
+              <div class="video-time">12.10</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-pic">
+                <img class="profile-pic" src="thumbnail/sorted.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Oreo, Popcorn Chicken and Squid Pizza from Pizza Hut Taiwan
+                </p>
+                <p class="video-author">
+                  Sorted Food
+                </p>
+                <p class="video-stats">
+                  371K views &#183; 2 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img  class="thumbnail" src="thumbnail/renfield.webp">
+              <div class="video-time">04.20</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-pic">
+                <img class="profile-pic" src="thumbnail/nerdist.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Renfield-Official Trailer (2023) Nicolas Cage, Nicholas Hoult
+                </p>
+                <p class="video-author">
+                  Nerdist
+                </p>
+                <p class="video-stats">
+                  566K views &#183; 3 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img  class="thumbnail" src="thumbnail/dragons.webp">
+              <div class="video-time">05.10</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-pic">
+                <img class="profile-pic" src="thumbnail/paramount.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">Dungeons & Dragons: Honor Among Thieves | NEW Trailer (2023 Movie)</p>
+                <p class="video-author">Paramount Pictures</p>
+                <p class="video-stats">13M views &#183; 5 days ago </p>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 -->
+         <div class="video-preview">
+          <div class="thumbnail-row"> 
+            <img  class="thumbnail" src="thumbnail/google-sundar.webp">
+            <div class="video-time">14.20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="thumbnail/marques.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago 
+              </p>
+            </div>
+          </div>
+         </div>
+      
+      
+         <div class="video-preview">
+          <div class="thumbnail-row">
+            <img  class="thumbnail" src="thumbnail/sorted.webp">
+            <div class="video-time">20.40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="thumbnail/sorted.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Oreo, Popcorn Chicken and Squid Pizza from Pizza Hut Taiwan
+              </p>
+              <p class="video-author">
+                Sorted Food
+              </p>
+              <p class="video-stats">
+                371K views &#183; 2 months ago
+              </p>
+            </div>
+          </div>
+         </div>
+      
+         <div class="video-preview">
+          <div class="thumbnail-row">
+            <img  class="thumbnail" src="thumbnail/renfield.webp">
+            <div class="video-time">12.07</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="thumbnail/nerdist.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Renfield-Official Trailer (2023) Nicolas Cage, Nicholas Hoult
+              </p>
+              <p class="video-author">
+                Nerdist
+              </p>
+              <p class="video-stats">
+                566K views &#183; 3 weeks ago
+              </p>
+            </div>
+          </div>
+         </div>
+        
+         <div class="video-preview">
+          <div class="thumbnail-row">
+            <img  class="thumbnail" src="thumbnail/dragons.webp">
+            <div class="video-time">06.13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="thumbnail/paramount.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">Dungeons & Dragons: Honor Among Thieves | NEW Trailer (2023 Movie)</p>
+              <p class="video-author">Paramount Pictures</p>
+              <p class="video-stats">13M views &#183; 5 days ago </p>
+            </div>
+          </div>
+         </div>
+      </section>
+   </main>
+    
+    
+  
+
+  </body>
+</html>
